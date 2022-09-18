@@ -1,0 +1,27 @@
+{
+    "ID": 0,
+    "category": 1,
+    "name": "Test Quest",
+    "client": "Bob",
+    "subcategory": "Testing",
+    "steps": [
+        {
+            "type": 5,
+            "description": "Move to the designated location.",
+            "locVicinity": 0,
+            "locType": 0,
+            "flagsNeeded": [
+                "Testing"
+            ],
+            "failFlags": [
+                "FailTest"
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "item": "TestItem2",
+            "number": 2
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "TestBiome",
+    "features": [
+        {
+            "folderName": "DifficultTerrain",
+            "tags": [
+                6
+            ],
+            "minNum": 1,
+            "maxNum": 1,
+            "genChanceBase": 0.8,
+            "genChanceDecay": 0.15,
+            "genPattern": 1,
+            "minXSize": 10,
+            "maxXSize": 15,
+            "clusterDensity": 0.7
+        }
+    ]
+}

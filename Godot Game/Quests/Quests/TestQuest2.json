@@ -1,0 +1,23 @@
+{
+    "ID": 1,
+    "category": 1,
+    "name": "Test Quest 2",
+    "client": "Bob",
+    "subcategory": "Testing",
+    "steps": [
+        {
+            "type": 4,
+            "target": "Bob",
+            "description": "Move to the designated location.",
+            "locVicinity": 3,
+            "locType": 1,
+            "dialogueRef": "file#res://GenerationAssets/DialogueFiles/DialogueTestSimple.json#start"
+        }
+    ],
+    "rewards": [
+        {
+            "item": "TestItem2",
+            "number": 2
+        }
+    ]
+}

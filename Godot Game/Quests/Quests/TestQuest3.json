@@ -1,0 +1,39 @@
+{
+    "ID": 2,
+    "category": 1,
+    "name": "Test Quest 3",
+    "client": "Bob",
+    "subcategory": "Testing",
+    "steps": [
+        {
+            "type": 3,
+            "description": "Move to the designated location.",
+            "locVicinity": 3,
+            "locType": 4,
+            "dialogueRef": "file#res://GenerationAssets/DialogueFiles/DialogueTestSimple.json#start"
+        },
+        {
+            "type": 4,
+            "target": "Bob",
+            "description": "Talk to Bob.",
+            "locVicinity": 3,
+            "locType": 1,
+            "dialogueRef": "file#res://GenerationAssets/DialogueFiles/DialogueTest2.json#start"
+        },
+        {
+            "type": 1,
+            "target": "TestItem1",
+            "number": 5,
+            "description": "Get some TestItem1(s) and bring them to Bob.",
+            "locVicinity": 3,
+            "locType": 1,
+            "dialogueRef": "file#res://GenerationAssets/DialogueFiles/FetchQuestTest.json#start"
+        }
+    ],
+    "rewards": [
+        {
+            "item": "TestItem2",
+            "number": 2
+        }
+    ]
+}

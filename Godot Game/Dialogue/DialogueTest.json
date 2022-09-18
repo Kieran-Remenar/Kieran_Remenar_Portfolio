@@ -1,0 +1,66 @@
+{
+  "dialogue": {
+    "start": {
+      "speaker": "Test",
+      "message": "Go add some items.",
+      "portraitPath": "test/portrait2",
+      "options": [
+        {
+          "text": "Add item x10",
+          "nextMessage": "test1"
+        }
+      ]
+    },
+    "test1": {
+      "speaker": "Test",
+      "message": "Adding items.",
+      "portraitPath": "test/portrait3",
+      "functions": [
+        "InventoryAdd:TestItem1,10",
+        "InventoryCheck:TestItem1,ItemThere,1"
+      ],
+      "nextMessages": [
+        {
+          "nextMessage": "test2",
+          "priority": 0,
+          "flagsNeeded": {
+            "ItemThere": false
+          }
+        },
+        {
+          "nextMessage": "test3",
+          "priority": 10,
+          "flagsNeeded": {
+            "ItemThere": true
+          }
+        }
+      ]
+    },
+    "test2": {
+      "speaker": "Test",
+      "message": "Items either not successfully added or checked.",
+      "portraitPath": "test/portrait1",
+      "next": "<end>"
+    },
+    "test3": {
+      "speaker": "Test",
+      "message": "Items added successfully! Remove some now.",
+      "portraitPath": "test/portrait2",
+      "options": [
+        {
+          "text": "Remove item x5",
+          "nextMessage": "test4"
+        }
+      ]
+    },
+    "test4": {
+      "speaker": "Test",
+      "message": "Items removed successfully. Ending test.",
+      "portraitPath": "test/portrait2",
+      "functions": [
+        "InventoryRemove:TestItem1,5,false"
+      ],
+      "next": "<end>"
+    }
+  }
+}
